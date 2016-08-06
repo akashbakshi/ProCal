@@ -53,67 +53,11 @@
                                     <color key="titleColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J79-eq-kxQ">
-                                <frame key="frameInset" minX="40" minY="83" width="90" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Sunday">
-                                    <color key="titleColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlT-Ci-IuT">
-                                <frame key="frameInset" minX="140" minY="83" width="90" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Monday">
-                                    <color key="titleColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAI-SW-lZc">
-                                <frame key="frameInset" minX="240" minY="83" width="90" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Tuesday">
-                                    <color key="titleColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geX-31-MgI">
-                                <frame key="frameInset" minX="340" minY="83" width="90" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
-                                <state key="normal" title="Wednesday">
-                                    <color key="titleColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zfh-G0-p7k">
-                                <frame key="frameInset" minX="440" minY="83" width="90" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Thursday">
-                                    <color key="titleColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZV5-dL-8sh">
-                                <frame key="frameInset" minX="540" minY="83" width="90" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Friday">
-                                    <color key="titleColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnW-TN-Yqx">
-                                <frame key="frameInset" minX="640" minY="83" width="90" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Saturday">
-                                    <color key="titleColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woR-Tu-I4L">
                                 <frame key="frameInset" minX="40" minY="120" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="1">
+                                <state key="normal" title=" 1">
                                     <color key="titleColor" red="0.92941176470588238" green="0.58039215686274515" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
@@ -405,6 +349,55 @@
                                     <color key="titleColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sunday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYR-Zg-fyt">
+                                <frame key="frameInset" minX="40" minY="87" width="90" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgq-sJ-sEM">
+                                <frame key="frameInset" minX="140" minY="87" width="90" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tuesday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfl-ia-PPw">
+                                <frame key="frameInset" minX="240" minY="87" width="90" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wednesday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qO4-Z9-SFn">
+                                <frame key="frameInset" minX="340" minY="87" width="90" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thursday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LmB-qy-7vo">
+                                <frame key="frameInset" minX="440" minY="87" width="90" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDB-Mt-Tur">
+                                <frame key="frameInset" minX="540" minY="87" width="90" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saturday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbD-lX-uJb">
+                                <frame key="frameInset" minX="640" minY="87" width="90" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.15686274509803921" green="0.15294117647058825" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -417,7 +410,51 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Monthly" image="first" id="acW-dT-cKf" userLabel="Month"/>
                     <connections>
+                        <outlet property="btnDay1" destination="woR-Tu-I4L" id="Rsv-DL-HzA"/>
+                        <outlet property="btnDay10" destination="jhm-S8-kls" id="pNQ-qe-OQZ"/>
+                        <outlet property="btnDay11" destination="CRF-FT-2Ib" id="3UC-4q-1jc"/>
+                        <outlet property="btnDay12" destination="bUF-WH-268" id="EHv-5b-Ovj"/>
+                        <outlet property="btnDay13" destination="VVh-or-F6p" id="zYh-vC-Cmt"/>
+                        <outlet property="btnDay14" destination="vgB-wj-iZf" id="0N1-rW-Lbq"/>
+                        <outlet property="btnDay15" destination="ncM-u0-aYM" id="Ruc-7B-fwI"/>
+                        <outlet property="btnDay16" destination="TRP-me-Rg6" id="Qrc-ev-8hw"/>
+                        <outlet property="btnDay17" destination="EB9-ox-lRN" id="AGb-KW-x1E"/>
+                        <outlet property="btnDay18" destination="cf9-Jb-f0S" id="Npd-hu-7ui"/>
+                        <outlet property="btnDay19" destination="bQS-uF-4Nv" id="acj-Xc-sJF"/>
+                        <outlet property="btnDay2" destination="LTT-yL-hMm" id="3Tj-1n-uWl"/>
+                        <outlet property="btnDay20" destination="oeC-PA-WnN" id="zxN-pZ-l82"/>
+                        <outlet property="btnDay21" destination="av3-XF-oQR" id="iqw-0A-aLR"/>
+                        <outlet property="btnDay22" destination="YQ3-z2-gke" id="xJN-bD-UYm"/>
+                        <outlet property="btnDay23" destination="MY2-Zh-YdB" id="Ad9-v2-HEQ"/>
+                        <outlet property="btnDay24" destination="eS8-Pb-xLH" id="nLT-zI-wgP"/>
+                        <outlet property="btnDay25" destination="AzK-vH-zqS" id="F8e-5d-Pvf"/>
+                        <outlet property="btnDay26" destination="JUu-f5-qsS" id="SUd-XZ-kfP"/>
+                        <outlet property="btnDay27" destination="VFx-aQ-jVP" id="sPb-ei-YSP"/>
+                        <outlet property="btnDay28" destination="lYj-eH-knx" id="7UD-aY-Wuh"/>
+                        <outlet property="btnDay29" destination="LUu-Yu-PhR" id="hhE-XN-yho"/>
+                        <outlet property="btnDay3" destination="TkA-5k-4ZX" id="tCs-KG-FMM"/>
+                        <outlet property="btnDay30" destination="mEC-G3-3BR" id="kZ3-kG-smd"/>
+                        <outlet property="btnDay31" destination="vgV-1M-NWi" id="6Ug-qP-7Mt"/>
+                        <outlet property="btnDay32" destination="q5I-l8-tIO" id="Q6L-CG-C8F"/>
+                        <outlet property="btnDay33" destination="jjY-hC-kpf" id="7iS-FE-lsn"/>
+                        <outlet property="btnDay34" destination="3Xk-Wb-S1j" id="LIn-zQ-7tP"/>
+                        <outlet property="btnDay35" destination="XP1-Nv-Q7l" id="A8g-8c-s3c"/>
+                        <outlet property="btnDay36" destination="Z90-JR-hDf" id="rlO-Gm-qpX"/>
+                        <outlet property="btnDay37" destination="yCM-ZA-2Au" id="rkT-tE-SvT"/>
+                        <outlet property="btnDay4" destination="MSf-3k-ie6" id="yOW-hz-dU4"/>
+                        <outlet property="btnDay5" destination="hcd-ll-xhN" id="tBC-Ib-v0e"/>
+                        <outlet property="btnDay6" destination="QXC-SF-S8A" id="n9O-XL-KNS"/>
+                        <outlet property="btnDay7" destination="ATI-Lq-1QK" id="ChN-ml-bIW"/>
+                        <outlet property="btnDay8" destination="WNK-r1-mx5" id="bI9-LK-geh"/>
+                        <outlet property="btnDay9" destination="Hvv-9Q-xMd" id="5p1-TV-f8l"/>
                         <outlet property="btnToday" destination="nTN-ep-7Ug" id="Vfa-h7-JbK"/>
+                        <outlet property="lbFriday" destination="lDB-Mt-Tur" id="QcB-Yl-f36"/>
+                        <outlet property="lbMonday" destination="Pgq-sJ-sEM" id="To8-Pl-iLo"/>
+                        <outlet property="lbSaturday" destination="xbD-lX-uJb" id="7oc-qC-JOo"/>
+                        <outlet property="lbSunday" destination="XYR-Zg-fyt" id="WMw-4q-r6c"/>
+                        <outlet property="lbThursday" destination="LmB-qy-7vo" id="V88-f6-3cE"/>
+                        <outlet property="lbTuesday" destination="bfl-ia-PPw" id="swp-Pk-vI2"/>
+                        <outlet property="lbWednesday" destination="qO4-Z9-SFn" id="wWl-xP-Eh7"/>
                         <outlet property="uivCanvas" destination="Ot6-Pc-vSu" id="aB0-nj-epo"/>
                     </connections>
                 </viewController>
