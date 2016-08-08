@@ -10,16 +10,17 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var weekOf: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let weekContent = UILabel()
+        weekContent.text = "June 1-7, 2016"
+        
+        
+        weekOf.addSubview(weekContent)
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

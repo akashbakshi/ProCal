@@ -67,37 +67,37 @@ class FirstViewController: UIViewController {
     
     func setUnapologeticEdges(){
         //Set rounded edges for Sunday
-        lbSunday.layer.cornerRadius = 8.0
+        lbSunday.layer.cornerRadius = 4.0
         lbSunday.layer.borderWidth = 1.0
         lbSunday.layer.borderColor = Trim.cgColor
         
         //Set rounded edges for Monday
-        lbMonday.layer.cornerRadius = 8.0
+        lbMonday.layer.cornerRadius = 4.0
         lbMonday.layer.borderWidth = 1.0
         lbMonday.layer.borderColor = Trim.cgColor
         
         //Set rounded edges for Tuesday
-        lbTuesday.layer.cornerRadius = 8.0
+        lbTuesday.layer.cornerRadius = 4.0
         lbTuesday.layer.borderWidth = 1.0
         lbTuesday.layer.borderColor = Trim.cgColor
         
         //Set rounded edges for Wednesday
-        lbWednesday.layer.cornerRadius = 8.0
+        lbWednesday.layer.cornerRadius = 4.0
         lbWednesday.layer.borderWidth = 1.0
         lbWednesday.layer.borderColor = Trim.cgColor
         
         //Set rounded edges for Thursday
-        lbThursday.layer.cornerRadius = 8.0
+        lbThursday.layer.cornerRadius = 4.0
         lbThursday.layer.borderWidth = 1.0
         lbThursday.layer.borderColor = Trim.cgColor
         
         //Set rounded edges for Friday
-        lbFriday.layer.cornerRadius = 8.0
+        lbFriday.layer.cornerRadius = 4.0
         lbFriday.layer.borderWidth = 1.0
         lbFriday.layer.borderColor = Trim.cgColor
         
         //Set rounded edges for Saturday
-        lbSaturday.layer.cornerRadius = 8.0
+        lbSaturday.layer.cornerRadius = 4.0
         lbSaturday.layer.borderWidth = 1.0
         lbSaturday.layer.borderColor = Trim.cgColor
         
@@ -287,10 +287,10 @@ class FirstViewController: UIViewController {
         btnDay37.layer.borderColor = Trim.cgColor
         
         //Canvas Border
-        uivCanvas.layer.cornerRadius = 8.0
-        uivCanvas.layer.borderWidth = 1.0
-        uivCanvas.layer.borderColor = Trim.cgColor
-        
+//        uivCanvas.layer.cornerRadius = 8.0
+//        uivCanvas.layer.borderWidth = 1.0
+//        uivCanvas.layer.borderColor = Trim.cgColor
+//        
         //Today Button
 //        btnToday.layer.cornerRadius = 7.0
 //        btnToday.layer.borderWidth = 1.0
