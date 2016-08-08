@@ -25,13 +25,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ot6-Pc-vSu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ot6-Pc-vSu">
                                 <frame key="frameInset" minY="738" width="768" height="242"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quick Daily Preview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="is6-NK-eLE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Quick Daily Preview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="is6-NK-eLE">
                                 <frame key="frameInset" minX="39" minY="709" width="190" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
                                 <color key="textColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -91,8 +89,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="z0V-hm-Ute">
-                                <frame key="frameInset" minX="61" minY="118" width="648" height="90"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="z0V-hm-Ute">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woR-Tu-I4L">
                                         <constraints>
@@ -143,8 +140,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cfp-0r-tq2">
-                                <frame key="frameInset" minX="61" minY="216" width="648" height="90"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cfp-0r-tq2">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNK-r1-mx5">
                                         <constraints>
@@ -195,8 +191,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qi6-A4-Hq4">
-                                <frame key="frameInset" minX="61" minY="314" width="648" height="90"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qi6-A4-Hq4">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncM-u0-aYM">
                                         <constraints>
@@ -247,8 +242,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6dT-fj-47p">
-                                <frame key="frameInset" minX="60" minY="412" width="648" height="90"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6dT-fj-47p">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQ3-z2-gke">
                                         <constraints>
@@ -299,8 +293,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LJJ-UK-1bK">
-                                <frame key="frameInset" minX="60" minY="510" width="648" height="90"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LJJ-UK-1bK">
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUu-Yu-PhR">
                                         <constraints>
@@ -351,25 +344,52 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="RhN-Lp-zGd">
-                                <frame key="frameInset" minX="60" minY="608" width="253" height="90"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fr7-uR-0oy">
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z90-JR-hDf">
-                                        <frame key="frameInset" width="90" height="90"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1q-of-3gw">
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="90" id="109-6F-JGG"/>
-                                            <constraint firstAttribute="height" constant="90" id="HoT-h1-6By"/>
-                                            <constraint firstAttribute="width" secondItem="Z90-JR-hDf" secondAttribute="height" multiplier="1:1" id="Kzq-f6-CPg"/>
+                                            <constraint firstAttribute="width" secondItem="n1q-of-3gw" secondAttribute="height" multiplier="1:1" id="I4W-6Q-ZGe"/>
+                                            <constraint firstAttribute="width" constant="90" id="keU-zx-684"/>
+                                            <constraint firstAttribute="height" constant="90" id="yCw-qu-9Gp"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                                         <state key="normal" title="36">
                                             <color key="titleColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCM-ZA-2Au">
-                                        <frame key="frameInset" minX="163" width="90" height="90"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atg-FB-dEK">
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                                         <state key="normal" title="37">
+                                            <color key="titleColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wE-gx-Ewk">
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LqY-8J-JuZ">
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsS-dE-cfW">
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcW-uS-poQ">
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal">
+                                            <color key="titleColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7l-7Q-ShL">
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal">
                                             <color key="titleColor" red="0.92941176469999998" green="0.58039215690000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
@@ -378,10 +398,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.15686274509803921" green="0.15294117647058825" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="RhN-Lp-zGd" firstAttribute="top" secondItem="LJJ-UK-1bK" secondAttribute="bottom" constant="8" id="1Rm-eE-9Ew"/>
+                            <constraint firstAttribute="bottom" secondItem="Ot6-Pc-vSu" secondAttribute="bottom" id="0ky-qU-jc0"/>
                             <constraint firstItem="LJJ-UK-1bK" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="41" id="3pa-SX-QIe"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6dT-fj-47p" secondAttribute="trailing" constant="39" id="45W-a2-xHR"/>
                             <constraint firstItem="LJJ-UK-1bK" firstAttribute="top" secondItem="6dT-fj-47p" secondAttribute="bottom" constant="8" id="62f-7w-JkS"/>
+                            <constraint firstItem="is6-NK-eLE" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="41" id="BBn-hz-IVD"/>
                             <constraint firstItem="nTN-ep-7Ug" firstAttribute="leading" secondItem="cHT-0K-Q62" secondAttribute="trailing" constant="463" id="DYC-Gt-X0U"/>
                             <constraint firstItem="Cfp-0r-tq2" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="41" id="Gha-dQ-iBZ"/>
                             <constraint firstItem="nTN-ep-7Ug" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="30" id="H5H-38-epn"/>
@@ -390,6 +411,7 @@
                             <constraint firstItem="z0V-hm-Ute" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="41" id="QRH-ow-jxE"/>
                             <constraint firstItem="Cfp-0r-tq2" firstAttribute="top" secondItem="z0V-hm-Ute" secondAttribute="bottom" constant="8" id="QYP-P4-pRi"/>
                             <constraint firstItem="D6n-Mj-Q45" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="29" id="QfN-D5-v9a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fr7-uR-0oy" secondAttribute="trailing" constant="39" id="SdG-Fw-0xP"/>
                             <constraint firstItem="Qi6-A4-Hq4" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="41" id="UNI-vA-dvi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KNP-UV-1Ob" secondAttribute="trailing" constant="39" id="VDL-rQ-0nO"/>
                             <constraint firstItem="KNP-UV-1Ob" firstAttribute="top" secondItem="nTN-ep-7Ug" secondAttribute="bottom" constant="9" id="YAf-IC-z1e"/>
@@ -397,19 +419,26 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Qi6-A4-Hq4" secondAttribute="trailing" constant="39" id="b2N-n3-qrc"/>
                             <constraint firstItem="KNP-UV-1Ob" firstAttribute="top" secondItem="cHT-0K-Q62" secondAttribute="bottom" constant="8" id="b7M-g9-gqW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LJJ-UK-1bK" secondAttribute="trailing" constant="39" id="d8h-1C-DcA"/>
+                            <constraint firstItem="is6-NK-eLE" firstAttribute="top" secondItem="fr7-uR-0oy" secondAttribute="bottom" constant="8" id="e2f-FO-dnU"/>
                             <constraint firstItem="6dT-fj-47p" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="41" id="eO9-67-oZG"/>
                             <constraint firstItem="LJJ-UK-1bK" firstAttribute="top" secondItem="6dT-fj-47p" secondAttribute="bottom" constant="8" id="f4m-oJ-nBs"/>
+                            <constraint firstItem="fr7-uR-0oy" firstAttribute="top" secondItem="LJJ-UK-1bK" secondAttribute="bottom" constant="8" id="gRk-zP-ELF"/>
                             <constraint firstItem="Qi6-A4-Hq4" firstAttribute="top" secondItem="Cfp-0r-tq2" secondAttribute="bottom" constant="8" id="k8I-OZ-QL2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="z0V-hm-Ute" secondAttribute="trailing" constant="39" id="mOq-Eb-KtM"/>
                             <constraint firstItem="KNP-UV-1Ob" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="41" id="mWk-kP-xL3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Cfp-0r-tq2" secondAttribute="trailing" constant="39" id="pCA-E1-qBC"/>
+                            <constraint firstAttribute="trailing" secondItem="Ot6-Pc-vSu" secondAttribute="trailing" id="q49-ta-y4u"/>
+                            <constraint firstItem="Ot6-Pc-vSu" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="qJ8-y0-MXm"/>
                             <constraint firstItem="Cfp-0r-tq2" firstAttribute="top" secondItem="z0V-hm-Ute" secondAttribute="bottom" constant="8" id="sYC-fn-vOq"/>
                             <constraint firstItem="6dT-fj-47p" firstAttribute="top" secondItem="Qi6-A4-Hq4" secondAttribute="bottom" constant="8" id="tAd-uI-RjC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nTN-ep-7Ug" secondAttribute="trailing" constant="39" id="txS-Tc-fIL"/>
                             <constraint firstItem="6dT-fj-47p" firstAttribute="top" secondItem="Qi6-A4-Hq4" secondAttribute="bottom" constant="8" id="w6x-sp-phN"/>
                             <constraint firstItem="D6n-Mj-Q45" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="40" id="wrE-i5-mbk"/>
+                            <constraint firstItem="Ot6-Pc-vSu" firstAttribute="top" secondItem="fr7-uR-0oy" secondAttribute="bottom" constant="38" id="xUx-Rq-ZRs"/>
+                            <constraint firstItem="fr7-uR-0oy" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="41" id="xo4-zx-jjI"/>
                             <constraint firstItem="Qi6-A4-Hq4" firstAttribute="top" secondItem="Cfp-0r-tq2" secondAttribute="bottom" constant="8" id="yMP-BD-rm3"/>
                             <constraint firstItem="KNP-UV-1Ob" firstAttribute="top" secondItem="D6n-Mj-Q45" secondAttribute="bottom" constant="7" id="ysV-L2-hql"/>
+                            <constraint firstItem="is6-NK-eLE" firstAttribute="top" secondItem="fr7-uR-0oy" secondAttribute="bottom" constant="8" id="zW9-jd-bil"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Monthly" image="first" id="acW-dT-cKf" userLabel="Month"/>
@@ -443,8 +472,8 @@
                         <outlet property="btnDay33" destination="jjY-hC-kpf" id="7iS-FE-lsn"/>
                         <outlet property="btnDay34" destination="3Xk-Wb-S1j" id="LIn-zQ-7tP"/>
                         <outlet property="btnDay35" destination="XP1-Nv-Q7l" id="A8g-8c-s3c"/>
-                        <outlet property="btnDay36" destination="Z90-JR-hDf" id="rlO-Gm-qpX"/>
-                        <outlet property="btnDay37" destination="yCM-ZA-2Au" id="rkT-tE-SvT"/>
+                        <outlet property="btnDay36" destination="n1q-of-3gw" id="1KG-Yu-H5H"/>
+                        <outlet property="btnDay37" destination="atg-FB-dEK" id="Dvi-2h-mPU"/>
                         <outlet property="btnDay4" destination="MSf-3k-ie6" id="yOW-hz-dU4"/>
                         <outlet property="btnDay5" destination="hcd-ll-xhN" id="tBC-Ib-v0e"/>
                         <outlet property="btnDay6" destination="QXC-SF-S8A" id="n9O-XL-KNS"/>
