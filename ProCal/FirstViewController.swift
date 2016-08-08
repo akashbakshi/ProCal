@@ -292,9 +292,9 @@ class FirstViewController: UIViewController {
         uivCanvas.layer.borderColor = Trim.cgColor
         
         //Today Button
-        btnToday.layer.cornerRadius = 7.0
-        btnToday.layer.borderWidth = 1.0
-        btnToday.layer.borderColor = Trim.cgColor
+//        btnToday.layer.cornerRadius = 7.0
+//        btnToday.layer.borderWidth = 1.0
+//        btnToday.layer.borderColor = Trim.cgColor
     }
     override func viewDidLoad() {
         super.viewDidLoad()
