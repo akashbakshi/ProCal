@@ -502,6 +502,18 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="53J-yk-0v1">
+                                <frame key="frameInset" minX="20" minY="49" width="728" height="918"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEk-eN-c2z">
+                                        <frame key="frameInset" minX="664" minY="8" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Back"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16663567408277741" green="0.16085897071457447" blue="0.17241237745098037" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.15686274509803921" green="0.15294117647058825" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -587,6 +599,7 @@
                         <outlet property="lbThursday" destination="LmB-qy-7vo" id="V88-f6-3cE"/>
                         <outlet property="lbTuesday" destination="bfl-ia-PPw" id="swp-Pk-vI2"/>
                         <outlet property="lbWednesday" destination="qO4-Z9-SFn" id="wWl-xP-Eh7"/>
+                        <outlet property="vCanvas" destination="53J-yk-0v1" id="GU6-d9-LdG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>

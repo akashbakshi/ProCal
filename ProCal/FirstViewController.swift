@@ -65,6 +65,10 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var btnToday: UIButton!
     
     
+    //View That will contain canvas items.
+    @IBOutlet weak var vCanvas: UIView!
+    
+    
     func setUnapologeticEdges(){
         //Set rounded edges for Sunday
         lbSunday.layer.cornerRadius = 4.0
@@ -319,12 +323,25 @@ class FirstViewController: UIViewController {
         
     }
     func onDateClick(sender: UIButton){
-        print("pressed")
+ 
          print(current_sender)
     }
-    func onDateLongPress(){
-        print("Long Pressed")
-        print(current_sender)
+    func onDateLongPress(recognizer: UIGestureRecognizer){
+        if recognizer.state == UIGestureRecognizerState.began{
+            
+            // Scale view down for popup animation
+            vCanvas.transform = CGAffineTransform.init(scaleX: 0.5, y: 0.5)
+            print(current_sender)
+
+            // Popup animation
+            UIView.animate(withDuration: 0.25, animations: {
+                    self.vCanvas.isHidden = false
+                self.vCanvas.transform = CGAffineTransform.init(scaleX: 1, y: 1)
+                })
+            
+        }else if recognizer.state == UIGestureRecognizerState.ended{
+            self.vCanvas.isHidden = true
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
