@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -503,16 +503,23 @@
                                 </subviews>
                             </stackView>
                             <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="53J-yk-0v1">
-                                <frame key="frameInset" minX="20" minY="49" width="728" height="918"/>
+                                <frame key="frameInset" minX="20" minY="41" width="728" height="918"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CQy-Un-Pe3" customClass="NoteCanvasView" customModule="ProCal" customModuleProvider="target">
+                                        <frame key="frameInset" minY="20" width="728" height="898"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEk-eN-c2z">
-                                        <frame key="frameInset" minX="664" minY="8" width="46" height="30"/>
+                                        <frame key="frameInset" minX="674" minY="2" width="46" height="16"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="onBackClick:" destination="9pv-A4-QxB" eventType="touchDown" id="ISo-E1-PU9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.16663567408277741" green="0.16085897071457447" blue="0.17241237745098037" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.10697475269102479" green="0.10326629459773592" blue="0.11068321078431365" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.15686274509803921" green="0.15294117647058825" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -554,6 +561,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Monthly" image="first" id="acW-dT-cKf" userLabel="Month"/>
                     <connections>
+                        <outlet property="btnBack" destination="hEk-eN-c2z" id="Mgs-jo-enX"/>
                         <outlet property="btnDay1" destination="woR-Tu-I4L" id="Rsv-DL-HzA"/>
                         <outlet property="btnDay10" destination="jhm-S8-kls" id="pNQ-qe-OQZ"/>
                         <outlet property="btnDay11" destination="CRF-FT-2Ib" id="3UC-4q-1jc"/>
@@ -599,6 +607,7 @@
                         <outlet property="lbThursday" destination="LmB-qy-7vo" id="V88-f6-3cE"/>
                         <outlet property="lbTuesday" destination="bfl-ia-PPw" id="swp-Pk-vI2"/>
                         <outlet property="lbWednesday" destination="qO4-Z9-SFn" id="wWl-xP-Eh7"/>
+                        <outlet property="uivCanvas" destination="CQy-Un-Pe3" id="GPB-AG-eWC"/>
                         <outlet property="vCanvas" destination="53J-yk-0v1" id="GU6-d9-LdG"/>
                     </connections>
                 </viewController>

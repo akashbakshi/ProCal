@@ -61,9 +61,9 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var btnDay35: UIButton!
     @IBOutlet weak var btnDay36: UIButton!
     @IBOutlet weak var btnDay37: UIButton!
-    @IBOutlet weak var uivCanvas: UIImageView!
+    @IBOutlet weak var uivCanvas: NoteCanvasView!
     @IBOutlet weak var btnToday: UIButton!
-    
+    @IBOutlet weak var btnBack: UIButton!
     
     //View That will contain canvas items.
     @IBOutlet weak var vCanvas: UIView!
@@ -299,12 +299,27 @@ class FirstViewController: UIViewController {
         btnToday.layer.cornerRadius = 7.0
         btnToday.layer.borderWidth = 1.0
         btnToday.layer.borderColor = Trim.cgColor
+        
+        vCanvas.layer.cornerRadius = 10.0
+        vCanvas.layer.borderWidth = 1.5
+        vCanvas.layer.borderColor = Trim.cgColor
+        
+        btnBack.setTitleColor(Trim, for: .normal)
     }
     @IBAction func onClick(_ sender: UIButton) {
         
         current_sender = sender.tag
         }
     
+    @IBAction func onBackClick(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.25, animations: {
+            self.vCanvas.isHidden = false
+            self.vCanvas.transform = CGAffineTransform.init(scaleX: 0.5, y: 0.5)
+        })
+        
+        self.vCanvas.isHidden = true
+        
+    }
     func setGesturesToButtons(){
     //set hold and double tap gesture listeners to all buttons
         
@@ -324,7 +339,15 @@ class FirstViewController: UIViewController {
     }
     func onDateClick(sender: UIButton){
  
-         print(current_sender)
+        vCanvas.transform = CGAffineTransform.init(scaleX: 0.5, y: 0.5)
+        print(current_sender)
+        
+        // Popup animation
+        UIView.animate(withDuration: 0.25, animations: {
+            self.vCanvas.isHidden = false
+            self.vCanvas.transform = CGAffineTransform.init(scaleX: 1, y: 1)
+        })
+
     }
     func onDateLongPress(recognizer: UIGestureRecognizer){
         if recognizer.state == UIGestureRecognizerState.began{
@@ -351,6 +374,8 @@ class FirstViewController: UIViewController {
         setGesturesToButtons()
         //Set Edges and color for the days of the week edges
         setUnapologeticEdges()
+        
+        uivCanvas.clearCanvas(animated: false)
     }
 
     

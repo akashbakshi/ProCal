@@ -15,6 +15,7 @@
 		B8384AD11D1FB5DC00C52F3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8384ACF1D1FB5DC00C52F3F /* LaunchScreen.storyboard */; };
 		B8384ADC1D1FB5DC00C52F3F /* ProCalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8384ADB1D1FB5DC00C52F3F /* ProCalTests.swift */; };
 		B8384AE71D1FB5DC00C52F3F /* ProCalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8384AE61D1FB5DC00C52F3F /* ProCalUITests.swift */; };
+		B8FC92AA1D7DDFB000CF05AA /* NoteCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FC92A91D7DDFB000CF05AA /* NoteCanvasView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B8384AE21D1FB5DC00C52F3F /* ProCalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProCalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8384AE61D1FB5DC00C52F3F /* ProCalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProCalUITests.swift; sourceTree = "<group>"; };
 		B8384AE81D1FB5DC00C52F3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8FC92A91D7DDFB000CF05AA /* NoteCanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCanvasView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		B8384AC31D1FB5DC00C52F3F /* ProCal */ = {
 			isa = PBXGroup;
 			children = (
+				B8FC92A91D7DDFB000CF05AA /* NoteCanvasView.swift */,
 				B8384AC41D1FB5DC00C52F3F /* AppDelegate.swift */,
 				B8384AC61D1FB5DC00C52F3F /* FirstViewController.swift */,
 				B8384AC81D1FB5DC00C52F3F /* SecondViewController.swift */,
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8FC92AA1D7DDFB000CF05AA /* NoteCanvasView.swift in Sources */,
 				B8384AC91D1FB5DC00C52F3F /* SecondViewController.swift in Sources */,
 				B8384AC51D1FB5DC00C52F3F /* AppDelegate.swift in Sources */,
 				B8384AC71D1FB5DC00C52F3F /* FirstViewController.swift in Sources */,
