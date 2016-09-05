@@ -13,7 +13,7 @@ class FirstViewController: UIViewController {
     //Design colors throughout app
     
     var Trim: UIColor = UIColor(red: 245.0/255.0, green: 166.0/255.0 , blue: 45.0/255.0, alpha: 1.0)
-    
+    var current_sender: Int = 0
     // Days Of The Week Labels
     @IBOutlet weak var lbSunday: UILabel!
     @IBOutlet weak var lbMonday: UILabel!
@@ -291,24 +291,52 @@ class FirstViewController: UIViewController {
 //        uivCanvas.layer.borderWidth = 1.0
 //        uivCanvas.layer.borderColor = Trim.cgColor
 //        
-        //Today Button
-//        btnToday.layer.cornerRadius = 7.0
-//        btnToday.layer.borderWidth = 1.0
-//        btnToday.layer.borderColor = Trim.cgColor
+//      Today Button
+        btnToday.layer.cornerRadius = 7.0
+        btnToday.layer.borderWidth = 1.0
+        btnToday.layer.borderColor = Trim.cgColor
+    }
+    @IBAction func onClick(_ sender: UIButton) {
+        
+        current_sender = sender.tag
+        }
+    
+    func setGesturesToButtons(){
+    //set hold and double tap gesture listeners to all buttons
+        
+        for i in 1...37{
+            let tmpBtn =  self.view.viewWithTag(i) as? UIButton
+            
+            let normalTap = UITapGestureRecognizer(target: self, action: #selector(onDateClick))
+            let longPress = UILongPressGestureRecognizer(target: self, action: #selector(onDateLongPress))
+            normalTap.numberOfTapsRequired = 2
+
+            
+            tmpBtn?.addGestureRecognizer(longPress)
+            tmpBtn?.addGestureRecognizer(normalTap)
+            
+        }
+        
+    }
+    func onDateClick(sender: UIButton){
+        print("pressed")
+         print(current_sender)
+    }
+    func onDateLongPress(){
+        print("Long Pressed")
+        print(current_sender)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
+
+        // Set Gesture Listeners for each button
+        setGesturesToButtons()
         //Set Edges and color for the days of the week edges
         setUnapologeticEdges()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
 
 }
 

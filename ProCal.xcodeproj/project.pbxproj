@@ -196,8 +196,8 @@
 				TargetAttributes = {
 					B8384AC01D1FB5DB00C52F3F = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 25E73F4PN4;
-						DevelopmentTeamName = "Akash Bakshi (Personal Team)";
+						DevelopmentTeam = 745B64Y44P;
+						DevelopmentTeamName = "Akash Bakshi";
 						LastSwiftMigration = 0800;
 					};
 					B8384AD61D1FB5DC00C52F3F = {
@@ -411,6 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ProCal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NextLevel.ProCal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ProCal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NextLevel.ProCal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
