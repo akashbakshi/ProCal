@@ -8,12 +8,19 @@
 
 import UIKit
 
+var day: Int = 0
+var month: Int = 0
+var year: Int = 0
+
+var wDay: Int = 0
 class FirstViewController: UIViewController {
 
     //Design colors throughout app
     
     var Trim: UIColor = UIColor(red: 245.0/255.0, green: 166.0/255.0 , blue: 45.0/255.0, alpha: 1.0)
     var current_sender: Int = 0
+    @IBOutlet weak var lbMonth: UILabel!
+    @IBOutlet weak var lbYear: UILabel!
     // Days Of The Week Labels
     @IBOutlet weak var lbSunday: UILabel!
     @IBOutlet weak var lbMonday: UILabel!
@@ -312,31 +319,16 @@ class FirstViewController: UIViewController {
         }
     
     @IBAction func onBackClick(_ sender: UIButton) {
-        UIView.animate(withDuration: 0.25, animations: {
-            self.vCanvas.isHidden = false
+        UIView.animate(withDuration: 0.05, animations: {
+            
             self.vCanvas.transform = CGAffineTransform.init(scaleX: 0.5, y: 0.5)
+        }, completion: { (finished: Bool) -> Void in
+            self.vCanvas.isHidden = true
         })
         
-        self.vCanvas.isHidden = true
         
     }
-    func setGesturesToButtons(){
-    //set hold and double tap gesture listeners to all buttons
-        
-        for i in 1...37{
-            let tmpBtn =  self.view.viewWithTag(i) as? UIButton
-            
-            let normalTap = UITapGestureRecognizer(target: self, action: #selector(onDateClick))
-            let longPress = UILongPressGestureRecognizer(target: self, action: #selector(onDateLongPress))
-            normalTap.numberOfTapsRequired = 2
-
-            
-            tmpBtn?.addGestureRecognizer(longPress)
-            tmpBtn?.addGestureRecognizer(normalTap)
-            
-        }
-        
-    }
+    
     func onDateClick(sender: UIButton){
  
         vCanvas.transform = CGAffineTransform.init(scaleX: 0.5, y: 0.5)
@@ -357,28 +349,278 @@ class FirstViewController: UIViewController {
             print(current_sender)
 
             // Popup animation
-            UIView.animate(withDuration: 0.25, animations: {
+            UIView.animate(withDuration: 0.2, animations: {
                     self.vCanvas.isHidden = false
                 self.vCanvas.transform = CGAffineTransform.init(scaleX: 1, y: 1)
                 })
             
         }else if recognizer.state == UIGestureRecognizerState.ended{
-            self.vCanvas.isHidden = true
+            UIView.animate(withDuration: 0.05, animations: {
+                
+                self.vCanvas.transform = CGAffineTransform.init(scaleX: 0.5, y: 0.5)
+                }, completion: { (finished: Bool) -> Void in
+                    self.vCanvas.isHidden = true
+            })
         }
     }
+    
+    //////////////////////
+    ////////////////////
+    //////////////////
+    ////////////////
+    //////////////
+    ////////////
+    //////////
+    ////////
+    //////
+    ////
+    //
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
 
         // Set Gesture Listeners for each button
         setGesturesToButtons()
         //Set Edges and color for the days of the week edges
         setUnapologeticEdges()
         
+        //Clear Canvas
         uivCanvas.clearCanvas(animated: false)
+        
+        // Setup forward/backward swipe gestures to navigate through months.
+        let leftSwipe =  UISwipeGestureRecognizer(target: self, action: #selector(nextDate))
+        leftSwipe.direction = .left
+        self.view.addGestureRecognizer(leftSwipe)
+        
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(previousDate))
+        rightSwipe.direction = .right
+        self.view.addGestureRecognizer(rightSwipe)
+        
+        //Set the initial Date info
+        setDateInfo()
+        
+        
+    }
+    
+    //////////////////////
+    ////////////////////
+    //////////////////
+    ////////////////
+    //////////////
+    ////////////
+    //////////
+    ////////
+    //////
+    ////
+    //
+    
+    
+    func setGesturesToButtons(){
+        //set hold and double tap gesture listeners to all buttons
+        
+        for i in 1...37{
+            let tmpBtn =  self.view.viewWithTag(i) as? UIButton
+            
+            let normalTap = UITapGestureRecognizer(target: self, action: #selector(onDateClick))
+            let longPress = UILongPressGestureRecognizer(target: self, action: #selector(onDateLongPress))
+            normalTap.numberOfTapsRequired = 2
+            
+            
+            tmpBtn?.addGestureRecognizer(longPress)
+            tmpBtn?.addGestureRecognizer(normalTap)
+            
+        }
+        
     }
 
+    func previousDate(){
+        if month > 1{
+            month -= 1
+            changeDate(mIndex: month)
+            lbMonth.text = setMonthTitle(month: month)
+        
+        }else{
+            month = 12
+            year -= 1
+            changeDate(mIndex: month)
+            lbMonth.text = setMonthTitle(month: month)
+            lbYear.text = String(year)
+        }
+    }
+    
+    func nextDate(){
+        if month < 12{
+            month += 1
+            changeDate(mIndex: month)
+            lbMonth.text = setMonthTitle(month: month)
+
+        }else{
+            month = 1
+            year += 1
+            changeDate(mIndex: month)
+            lbMonth.text = setMonthTitle(month: month)
+            lbYear.text = String(year)
+        }
+    }
+    
+    func determineDaysInMonth(month: Int) ->Int{
+        
+        var nDays: Int = 0
+        switch month {
+        case 1:
+            nDays = 31
+        case 2:
+            nDays = 28
+        case 3:
+            nDays = 31
+        case 4:
+            nDays = 30
+        case 5:
+            nDays = 31
+        case 6:
+            nDays = 30
+        case 7:
+            nDays = 31
+        case 8:
+            nDays = 31
+        case 9:
+            nDays = 30
+        case 10:
+            nDays = 31
+        case 11:
+            nDays = 30
+        case 12:
+            nDays = 31
+        default:
+            nDays = 31
+        }
+     return nDays
+    }
+    
+    func setMonthTitle(month: Int)->String{
+        var tmpName: String = ""
+        
+        switch month {
+        case 1:
+            tmpName = "Januray"
+        case 2:
+            tmpName = "February"
+        case 3:
+            tmpName = "March"
+        case 4:
+            tmpName = "April"
+        case 5:
+            tmpName = "May"
+        case 6:
+            tmpName = "June"
+        case 7:
+            tmpName = "July"
+        case 8:
+            tmpName = "August"
+        case 9:
+            tmpName = "September"
+        case 10:
+            tmpName = "October"
+        case 11:
+            tmpName = "November"
+        case 12:
+            tmpName = "December"
+        default:
+            tmpName = "Januray"
+        }
+
+        return tmpName
+    }
+    
+    func setDateInfo(){
+        
+        var numDays: Int = 0
+        let calendar = NSCalendar.init(calendarIdentifier: NSCalendar.Identifier.gregorian)
+        
     
 
+        day = (calendar?.component(NSCalendar.Unit.day, from: NSDate() as Date))!
+        month = (calendar?.component(NSCalendar.Unit.month, from: NSDate() as Date))!
+        year = (calendar?.component(NSCalendar.Unit.year, from: NSDate() as Date))!
+        
+        let dateComponents = NSDateComponents()
+        dateComponents.year = year
+        dateComponents.month = month
+        dateComponents.day = 1
+        
+        wDay = (calendar?.component(NSCalendar.Unit.weekday, from: (calendar?.date(from: dateComponents as DateComponents))!))!
+        print(wDay)
+        
+        numDays = determineDaysInMonth(month: month)
+    
+        
+        for i in 1...37{
+            let tmp = self.view.viewWithTag(i)
+            tmp?.isHidden = true
+        }
+        
+        var index: Int = 1
+        
+        for i in wDay...(numDays+wDay-1){
+            let tmpBtn = self.view.viewWithTag(i)
+            tmpBtn?.isHidden = false
+        }
+        
+        for i in 1...37{
+            let tmp = self.view.viewWithTag(i) as? UIButton
+            if tmp?.isHidden == false{
+                tmp?.setTitle(String("  \(index)"), for: .normal)
+                index += 1
+            }
+        }
+
+        lbMonth.text = setMonthTitle(month: month)
+ 
+    }
+        
+    func changeDate(mIndex: Int?){
+        
+        let calendar = NSCalendar.init(calendarIdentifier: NSCalendar.Identifier.gregorian)
+        
+        let dateComponents = NSDateComponents()
+        dateComponents.year = year
+        dateComponents.month = month
+        dateComponents.day = 1
+        
+        wDay = (calendar?.component(NSCalendar.Unit.weekday, from: (calendar?.date(from: dateComponents as DateComponents))!))!
+        print(wDay)
+        
+        let tmpNum = determineDaysInMonth(month: mIndex!)
+        
+        for i in 1...37{
+            let tmp = self.view.viewWithTag(i) as? UIButton
+            tmp?.isHidden = true
+        }
+        
+        for i in wDay...(tmpNum+wDay-1){
+            let tmpBtn = self.view.viewWithTag(i) as? UIButton
+            tmpBtn?.isHidden = false
+            
+        }
+        var index: Int = 1
+        
+        for i in 1...37{
+            let tmp = self.view.viewWithTag(i) as? UIButton
+            if tmp?.isHidden == false{
+                tmp?.setTitle(String("  \(index)"), for: .normal)
+                index += 1
+            }
+        }
+    }
+    
+    func GenerateDateFromButton(day: Int, month: Int, year: Int)->String{
+        
+        var date: String = String(day)
+        date.append(String(month))
+        date.append(String(year))
+        
+        return date
+        
+    }
 }
 
