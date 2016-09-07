@@ -399,6 +399,7 @@ class FirstViewController: UIViewController {
         //Set the initial Date info
         setDateInfo()
         
+        print(GenerateDateFromButton(day: day, month: month, year: year))
         
     }
     
